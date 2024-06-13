@@ -10,4 +10,4 @@ jobs:
       shell: powershell.exe
     steps:
       - checkout
-      - run: systeminfo
+      - run: Write-Host 'hello world!'
