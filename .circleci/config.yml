@@ -3,7 +3,7 @@ orbs:
   win: circleci/windows@5.0
 jobs:
   build:
-    executor: win/default # executor type
+    executor: win/default
     steps:
       - checkout
-      - run: Write-Host 'Hello, Windows'
+      - run: choco install tailscale
