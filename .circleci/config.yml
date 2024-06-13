@@ -6,4 +6,3 @@ jobs:
     executor: win/default
     steps:
       - checkout
-      - run: choco install tailscale
