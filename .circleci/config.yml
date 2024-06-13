@@ -1,8 +1,13 @@
 version: 2.1
+
 orbs:
   win: circleci/windows@5.0
+
 jobs:
   build:
-    executor: win/default
+    executor:
+      name: win/default
+      shell: powershell.exe
     steps:
       - checkout
+      - run: systeminfo
